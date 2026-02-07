@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vantage CX | Premium Shopify Support Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --text-gray: #475569;
+            --light-bg: #f8fafc;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: white; color: var(--primary); scroll-behavior: smooth; }
+
+        /* Navigation */
+        nav { padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: white; z-index: 1000; border-bottom: 1px solid #eee; }
+        .logo { font-size: 22px; font-weight: 800; letter-spacing: -1px; }
+        .logo span { color: var(--accent); }
+        .nav-links a { text-decoration: none; color: var(--primary); margin-left: 25px; font-size: 14px; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        .hero { padding: 120px 10%; text-align: center; background: linear-gradient(180deg, #fff 0%, var(--light-bg) 100%); }
+        .hero h1 { font-size: 56px; font-weight: 800; line-height: 1.1; margin-bottom: 25px; letter-spacing: -2px; }
+        .hero p { font-size: 20px; color: var(--text-gray); max-width: 650px; margin: 0 auto 35px; }
+        .btn { background: var(--accent); color: white; padding: 18px 35px; text-decoration: none; border-radius: 6px; font-weight: 600; display: inline-block; transition: 0.3s; border: none; cursor: pointer; font-size: 16px; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2); }
+
+        /* Services Grid */
+        .section-title { text-align: center; padding: 80px 10% 0; font-size: 32px; font-weight: 800; }
+        .services { padding: 60px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { padding: 40px; border: 1px solid #e2e8f0; border-radius: 12px; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); background: var(--light-bg); }
+        .card i { font-size: 28px; color: var(--accent); margin-bottom: 20px; }
+        .card h3 { margin-bottom: 15px; font-size: 20px; }
+        .card p { color: var(--text-gray); font-size: 15px; line-height: 1.6; }
+
+        /* FAQ Section */
+        .faq { padding: 80px 10%; background: var(--light-bg); }
+        .faq-item { background: white; padding: 25px; border-radius: 8px; margin-bottom: 15px; }
+        .faq-item h4 { margin-bottom: 10px; color: var(--accent); }
+        .faq-item p { font-size: 14px; color: var(--text-gray); }
+
+        /* Contact Section */
+        .contact { padding: 100px 10%; display: flex; gap: 50px; flex-wrap: wrap; }
+        .contact-info { flex: 1; min-width: 300px; }
+        .contact-info h2 { font-size: 36px; margin-bottom: 20px; }
+        .contact-info p { color: var(--text-gray); margin-bottom: 30px; }
+        .contact-form { flex: 1; min-width: 300px; background: var(--light-bg); padding: 40px; border-radius: 12px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 600; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; outline: none; background: white; }
+        .form-group input:focus { border-color: var(--accent); }
+
+        footer { background: var(--primary); color: #94a3b8; padding: 60px 10%; text-align: center; }
+        .footer-logo { color: white; font-size: 24px; font-weight: 800; margin-bottom: 20px; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            nav { flex-direction: column; gap: 20px; }
+            .nav-links a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">VANTAGE<span>CX</span></div>
+    <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Scale Your Shopify Brand With Elite Support.</h1>
+    <p>High-growth Shopify stores trust us to manage customer experience, recover abandoned revenue, and provide 24/7 global coverage.</p>
+    <a href="#contact" class="btn">Request Free Audit</a>
+</section>
+
+<div id="services" class="section-title">Strategic Solutions</div>
+<section class="services">
+    <div class="card">
+        <i class="fas fa-file-invoice"></i>
+        <h3>Custom Support Playbook</h3>
+        <p>We build a comprehensive brand bible for your store. This ensures every customer receives a consistent, high-end response that matches your brand voice perfectly.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-shopping-cart"></i>
+        <h3>Abandoned Cart Recovery</h3>
+        <p>Our team proactively reaches out to high-value customers who left items behind, turning lost interest into captured revenue every single day.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-globe"></i>
+        <h3>24/7 Global Coverage</h3>
+        <p>While you sleep, we scale. We manage your inquiries around the clock, ensuring zero delays in response times across all time zones.</p>
+    </div>
+</section>
+
+<section class="faq" id="faq">
+    <h2 style="text-align: center; margin-bottom: 50px;">Frequently Asked Questions</h2>
+    <div style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item">
+            <h4>How do you learn our brand voice?</h4>
+            <p>During onboarding, we audit your past tickets and tone. We then build a "Support Playbook" that defines exactly how our agents represent your brand.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Which tools are you proficient in?</h4>
+            <p>We are experts in Shopify, Gorgias, Tidio, Klaviyo, and Zendesk. We integrate seamlessly with your current tech stack.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-info">
+        <h2>Ready to upgrade your support?</h2>
+        <p>Drop us a message and we'll analyze your store's current support structure. Our strategy team will get back to you with a free audit within 2 hours.</p>
+        <div style="margin-top: 20px;">
+            <p><strong><i class="fas fa-envelope" style="color: var(--accent);"></i> Email:</strong> hello@vantagecx.com</p>
+            <p><strong><i class="fas fa-bolt" style="color: var(--accent);"></i> Status:</strong> Accepting new brands</p>
+        </div>
+    </div>
+    <div class="contact-form">
+        <form action="https://formspree.io/f/xreagerd" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label>Store Name / URL</label>
+                <input type="text" name="Store" placeholder="yourstore.com" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="Email" placeholder="owner@brand.com" required>
+            </div>
+            <div class="form-group">
+                <label>How can we help?</label>
+                <textarea name="Message" rows="4" placeholder="Briefly describe your support needs..."></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Send Inquiry</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-logo">VANTAGE<span>CX</span></div>
+    <p>Strategic Customer Experience for Modern E-commerce.</p>
+    <p style="margin-top: 30px; font-size: 12px;">&copy; 2026 Vantage CX Strategy Group. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
